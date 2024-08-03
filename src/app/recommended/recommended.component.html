@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+
+      @for( product of recommended; track $index)
+      {
+        <div class="col-12 col-md-4 ">
+          <div class="content w-75 m-auto text-start pt-5">
+            <div class="box-img">
+              <img class="w-100 rounded-3" [src]="product.image" height="300" alt="">
+            </div>
+            <p>name: {{product.name}}</p>
+            <p>price: {{product.price}}<span>$</span></p>
+          </div>
+      </div>
+      }
+
+
+  </div>
+
+</div>

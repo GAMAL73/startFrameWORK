@@ -1,0 +1,6 @@
+.bg-error{
+  background-image: url('../../assets/404-not-found-erro.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}

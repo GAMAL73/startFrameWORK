@@ -1,0 +1,13 @@
+.row{
+  justify-content: center;
+  align-items: center;
+}
+.line{
+  height: 4px;
+  width: 80px;
+  background-color: aliceblue;
+}
+.bg-home{
+  background-color: #1abc9c;
+  margin-block: 0;
+}

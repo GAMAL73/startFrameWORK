@@ -1,0 +1,30 @@
+
+<div class="bg-gallary mt-5">
+  <div class="container pt-5">
+      <div class="pt-5 text-center">
+        <h2>Gallary Product</h2>
+          <div class="d-flex align-items-center justify-content-center mt-4">
+            <div class="line mx-2"></div>
+            <i class="fa-solid fa-star mx-1"></i>
+            <div class="line mx-2"></div>
+          </div>
+      </div>
+      <div class="row w-100 g-4">
+          @for (gallary of gallaryList; track $index) {
+              <div class="col-12 col-md-4">
+                  <div class="content w-75 text-start pt-5 m-auto">
+                    <div class="box-img">
+                      <img class="w-100 rounded-3" [src]="gallary.image" height="300" alt="">
+                    </div>
+                    <p>name: {{gallary.name}}</p>
+                    <p>price: {{gallary.price}}<span>$</span></p>
+                  </div>
+              </div>
+          }
+      </div>
+      <h2 #h2 class="recommended text-center">Recommended</h2>
+      @defer (on viewport(h2)) {
+        <app-recommended></app-recommended>
+      }
+  </div>
+</div>

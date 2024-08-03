@@ -1,0 +1,39 @@
+// في مشكلة في السكشن ده انو بيظهر فوق ال footer
+//انا اديت padding &margin كبير عشان متبنش
+// وهتعرف قصديaap شوف
+<div class="bg-portfolio pb-5 my-5">
+  <div class="container text-center pt-5 vh-100">
+    <div>
+          <h2 class="mt-5 text-uppercase">portfolio component</h2>
+            <div class="d-flex align-items-center justify-content-center mt-4">
+              <div class="line mx-2"></div>
+              <i class="fa-solid fa-star mx-1"></i>
+              <div class="line mx-2"></div>
+            </div>
+    </div>
+    <div class="row pt-3 g-4">
+      @for (product of productList; track $index) {
+        <div class="col-md-4 col-12" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <div class="position-relative layer rounded-4 overflow-hidden">
+            <div>
+              <img class="w-100" [src]="product.pImage" alt="">
+            </div>
+              <div class="cover position-absolute w-100 top-0 bottom-0 d-flex justify-content-center align-items-center">
+                <i class="text-white fa-solid fa-plus fa-6x"></i>
+              </div>
+          </div>
+        </div>
+                <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                      <div class="d-flex justify-content-center align-items-center h-100">
+                        <div class="box-img w-100">
+                          <img class="w-100 rounded-5" [src]="product.pImage" alt="">
+                        </div>
+                      </div>
+              </div>
+            </div>
+      }
+    </div>
+  </div>
+</div>

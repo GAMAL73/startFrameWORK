@@ -1,0 +1,20 @@
+h2{
+  font-size: 40px;
+  font-weight: 700;
+  color:#1abc9c;
+}
+.line{
+  height: 4px;
+  width: 80px;
+  background-color: #1abc9c;
+}
+.fa-star{
+  color: #1abc9c;
+}
+.recommended{
+  background-color: #1abc9c;
+  color: black;
+}
+.col-md-4{
+  cursor: pointer;
+}

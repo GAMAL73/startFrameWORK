@@ -1,0 +1,17 @@
+p,h1,h2,h3{
+  padding: 0;
+  margin: 0;
+}
+.bg-about{
+  background-color: #1abc9c;
+}
+.line{
+  height: 4px;
+  width: 80px;
+  background-color: aliceblue;
+}
+h1{
+  font-size: 40px;
+  line-height: 48px;
+  font-weight:700;
+}
